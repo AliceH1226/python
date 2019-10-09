@@ -1,0 +1,12 @@
+
+str=input()
+flag=0
+for i in str:
+    if (i<'0' or i>'9') and (i<'a' or i>'z'):
+                                                  flag=1
+if flag==0:
+                                                  print('只由数字和字母组成')
+else:
+    print('不只由数字或字母组成')
+
+
