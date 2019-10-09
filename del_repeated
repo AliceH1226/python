@@ -1,0 +1,22 @@
+
+
+A=[]
+n=int(input())
+i=n
+while i:
+    x=input()
+    A.append(x)
+    i=i-1
+
+for j in range(0,n-1):
+    k=j+1
+    while k<n:
+        if A[j]==A[k]:
+            del A[k]
+            n=n-1
+            k=k-1
+        k=k+1
+    
+  
+    
+print(A)
