@@ -1,0 +1,11 @@
+
+
+n=int(input())
+info={}
+while n:
+    id=input()
+    name=input()
+    info[id]=name
+    n=n-1
+info2=sorted(info.items())
+print(info2)
