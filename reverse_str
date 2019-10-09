@@ -1,0 +1,17 @@
+
+
+A=['1','2','3','4','5']
+A.remove(A[0])
+A.pop()
+print(A)
+
+
+info=[1,2,3,4,5]
+info2=[]
+len=len(info)
+i=len-1
+while i>=0:
+    info2.append(info[i])
+    i=i-1
+info=info2
+print(info)
