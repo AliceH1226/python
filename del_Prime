@@ -1,0 +1,14 @@
+
+
+n=int(input())
+A=[]
+while n:
+    x=int(input())
+    isPrime=True
+    for i in range(2,x):
+        if x%i==0:
+            isPrime=False
+    if not isPrime:
+        A.append(x)
+    n=n-1
+print(A)
