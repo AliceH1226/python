@@ -1,0 +1,15 @@
+
+
+n=int(input())
+info={}
+while n:
+    name=input()
+    gender=input()
+    info[name]=gender
+    n=n-1
+
+info2={}
+for key in info.keys():
+    if info[key]!='m':
+        info2[key]=info[key]
+print(info2)
