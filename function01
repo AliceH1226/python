@@ -1,0 +1,8 @@
+
+
+def sum(a,b,c):
+    print(a)
+    print(b)
+    print(c)
+    return a+b+c
+print(sum(b=1,a=8,c=1))#order of a,b,c can be defferent
