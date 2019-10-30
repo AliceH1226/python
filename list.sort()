@@ -1,0 +1,14 @@
+//read all the numbers form 0~9 from a file. print them after being sorted
+
+
+file=open('C:\\Users\\lenovo\\Desktop\\tmp.txt','r')
+content=file.read()
+list=[]
+for i in content:
+    if i<='9'and i>='0':
+        list.append(i)
+list.sort()
+for i in list:
+    print(i)
+file.close()
+
