@@ -1,0 +1,13 @@
+//打开一个文件，把大小写互换
+
+
+
+f= open(r'C:\\Users\\lenovo\\Desktop\\tmp.txt','r')
+s = f.readlines()
+f.close()
+  
+r = [i.swapcase() for i in s]
+  
+f = open(r'C:\\Users\\lenovo\\Desktop\\tmp.txt','w')
+f.writelines(r)
+f.close()
