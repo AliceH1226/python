@@ -11,3 +11,19 @@ r = [i.swapcase() for i in s]
 f = open(r'C:\\Users\\lenovo\\Desktop\\tmp.txt','w')
 f.writelines(r)
 f.close()
+
+
+
+
+f=open('C:\\Users\\lenovo\\Desktop\\tmp.txt','r')
+content=f.read()
+f.close()
+f=open('C:\\Users\\lenovo\\Desktop\\tmp.txt','w')
+for i in content:
+    print(i)
+    if i<='Z'and i>='A':
+        i=i.lower()
+    elif i<='z' and i>='a':
+        i=i.upper()
+    f.write(i)
+f.close()
