@@ -1,0 +1,18 @@
+//existence of a triangle condition on sides
+
+
+def tri(a,b,c):
+    tri2=True
+    if a+b<=c or a+c<=b or b+c<=a:
+        tri2=False
+    if abs(a-b)>=c or abs(a-c)>=b or abs(b-c)>=a:
+        tri2=False
+    if tri2:
+        print('是')
+    else:
+        print('否')
+a=int(input())
+b=int(input())
+c=int(input())
+tri(a,b,c)
+        
