@@ -1,0 +1,19 @@
+//identify a prime
+
+
+
+import math
+def prime(n):
+    P=True;
+    for i in range (2,int(math.sqrt(n)+1)):
+        if n%i==0:
+            P=False
+            break
+    if P:
+        print('是')
+    else:
+        print('否')
+        
+
+n=int(input())
+prime(n)
