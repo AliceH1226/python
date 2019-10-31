@@ -1,0 +1,23 @@
+import math
+def prime(n):
+    if n==1:
+        return False
+    P=True;
+    for i in range (2,int(math.sqrt(n)+1)):
+        if n%i==0:
+            P=False
+            break
+    return P
+list=[1,2,3,4,5,6]
+list_len=len(list)
+
+i=0
+while i<list_len:
+    if prime(list[i]):
+        del list[i]
+        list_len-=1
+    else:
+        i+=1
+for i in list:
+    print(i)
+
