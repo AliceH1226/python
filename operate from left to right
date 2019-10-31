@@ -1,0 +1,15 @@
+//add brackets to the whole denominator, otherwise error
+
+n=int(input())
+sum=0
+for i in range(1,n+1):
+    print(i)
+    if i&1:
+        sum+=1/(i*(i+1))
+        print('odd')
+        print(sum)
+    else :
+        sum-=1/(i*(i+1))
+        print('even')
+        print(sum)
+print(sum)
