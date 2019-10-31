@@ -1,5 +1,5 @@
 //identify a prime
-
+//(math.spart(n)+1) is in float type; can not be used as a parameter in range function
 
 
 import math
