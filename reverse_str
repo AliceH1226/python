@@ -7,6 +7,12 @@ print(A)
 
 
 info=[1,2,3,4,5]
+info.sort(reverse=True)
+print(info)
+
+
+
+info=[1,2,3,4,5]
 info2=[]
 len=len(info)
 i=len-1
