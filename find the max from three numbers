@@ -1,0 +1,11 @@
+//create a function; print the max num from the three parameters
+
+
+def getMax(a,b,c):
+    tmp=a
+    if tmp<b:
+        tmp=b
+    if tmp<c:
+        tmp=c
+    return tmp
+print(getMax(1,2,3))
