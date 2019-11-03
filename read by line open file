@@ -1,0 +1,9 @@
+//open a file; print the lines which do not start with '#'
+
+
+
+file=open('C:\\Users\\lenovo\\Desktop\\tmp2.txt','r')
+content=file.readlines()
+for i in content:
+    if i[0]!='#':
+        print(i)
